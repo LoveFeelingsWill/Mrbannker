@@ -21,7 +21,6 @@ OWNER = int(os.getenv('OWNER', CONFIG['owner']))
 ANTISPAM = int(os.getenv('ANTISPAM', CONFIG['antispam']))
 
 # Initialize bot and dispatcher
-storage = MemoryStorage()
 bot = Bot(token=TOKEN, parse_mode=types.ParseMode.HTML)
 dp = Dispatcher(bot, storage=storage)
 
