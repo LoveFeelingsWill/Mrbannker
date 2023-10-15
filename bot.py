@@ -22,7 +22,7 @@ ANTISPAM = int(os.getenv('ANTISPAM', CONFIG['antispam']))
 
 # Initialize bot and dispatcher
 bot = Bot(token=TOKEN)
-dp = Dispatcher(bot, storage=storage)
+dp = Dispatcher(bot)
 
 # Configure logging
 logging.basicConfig(level=logging.INFO)
